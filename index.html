@@ -53,9 +53,103 @@
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+
+    #services {
+  background-color: #f1f5f9;
+}
+
+#about {
+  background-color: #ffffff;
+}
+
+#contact {
+  background-color: #eef2f7;
+}
+
+/* Fixed social icons (IMAGE version) */
+.social-icons {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 2000;
+}
+
+.social-icons a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Initial hidden state */
+#services .card {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideIn 0.8s ease forwards;
+}
+
+/* Staggered animation delays */
+#services .col-md-4:nth-child(1) .card {
+  animation-delay: 0.3s;
+}
+
+#services .col-md-4:nth-child(2) .card {
+  animation-delay: 0.6s;
+}
+
+#services .col-md-4:nth-child(3) .card {
+  animation-delay: 0.9s;
+}
+
+#services .col-md-4:nth-child(4) .card {
+  animation-delay: 1.2s;
+}
+
+/* Slide animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
   </style>
 </head>
 <body>
+  
+  <!-- Social icons -->
+  <div class="social-icons">
+    <a href="https://www.instagram.com/vincent_thrives" target="_blank" class="instagram">
+      <img src="https://up.yimg.com/ib/th/id/OIP.shMLwGIsbDrfGhWzmHp0mQHaF7?pid=Api&rs=1&c=1&qlt=95&w=150&h=120" alt="Instagram">
+    </a>
+  
+    <a href="https://wa.me/917892549612" target="_blank" class="whatsapp">
+      <img src="https://up.yimg.com/ib/th/id/OIP.TwESrblIhpd2D8XG5VDz5QHaHa?pid=Api&rs=1&c=1&qlt=95&w=104&h=104" alt="WhatsApp">
+    </a>
+  </div>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
