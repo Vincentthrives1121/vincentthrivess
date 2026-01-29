@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vincent Thrives Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 150px 20px;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    .footer {
+      background: #f8f9fa;
+      padding: 30px;
+      text-align: center;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Vincent Thrives Private Limited</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Vincent Thrives Services</h1>
+      <p class="lead">Empowering Business Through People & Technology</p>
+    </div>
+  </section>
+
+  <!-- Services Section with Cards -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row g-4">
+
+        <!-- Recruitment -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?fit=crop&w=800&q=80" class="card-img-top" alt="Recruitment">
+            <div class="card-body">
+              <h5 class="card-title">Recruitment</h5>
+              <p class="card-text">We help companies find top talent through customized hiring strategies and talent sourcing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Application Development -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=800&q=80" class="card-img-top" alt="Application Development">
+            <div class="card-body">
+              <h5 class="card-title">Application Development</h5>
+              <p class="card-text">We develop modern applications to help automate, optimize, and scale your business operations.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- website developments -->
+   <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.y3Fo5_WqkI7D4ZZHhMb9hgHaDT?pid=Api&P=0&h=180" class="card-img-top" alt="Application Development">
+            <div class="card-body">
+              <h5 class="card-title">Website Development</h5>
+              <p class="card-text">We develop modern websites to help automate, optimize, and scale your business operations.</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Payroll -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://up.yimg.com/ib/th/id/OIP.srPyX53lKMRybh9fD2OkEQHaE8?pid=Api&rs=1&c=1&qlt=95&w=152&h=101" class="card-img-top" alt="Payroll Services">
+            <div class="card-body">
+              <h5 class="card-title">Payroll Services</h5>
+              <p class="card-text">Our payroll services ensure timely salary disbursement, tax compliance, and record management.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">
+        Vincent Thrives Consultancy is your strategic partner in recruitment, application development, and payroll management. We empower businesses to scale with confidence by delivering high-impact, custom solutions.
+      </p>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Get in Touch</h2>
+      <div class="row justify-content-center g-4">
+        
+        <!-- Email Card -->
+        <div class="col-md-5">
+          <div class="bg-white p-4 rounded shadow-sm h-100 text-center contact-card">
+            <i class="bi bi-envelope-fill display-4 text-primary mb-3"></i>
+            <h5>Email Us</h5>
+            <p><a href="mailto:vincentthrives@gmail.com" class="text-decoration-none fs-5">vincentthrives@gmail.com</a></p>
+          </div>
+        </div>
+  
+        <!-- Phone Card -->
+        <div class="col-md-5">
+          <div class="bg-white p-4 rounded shadow-sm h-100 text-center contact-card">
+            <i class="bi bi-telephone-fill display-4 text-success mb-3"></i>
+            <h5>Call Us</h5>
+            <p><a href="tel:7892549612" class="text-decoration-none fs-5">7892549612</a></p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+          <P> Arun K Founder of Vincent Thrives Private Limited</P>
+      <p>&copy; 2025 Vincent Thrives Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
