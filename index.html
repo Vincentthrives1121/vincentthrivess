@@ -164,6 +164,25 @@
   max-width: 520px;       /* keeps it elegant on large screens */
   object-fit: contain;
 }
+#clients {
+  padding: 80px 0;
+}
+
+.client-logo {
+  max-height: 320px;      /* BIGGER image */
+  width: 100%;
+  max-width: 520px;       /* keeps it elegant on large screens */
+  object-fit: contain;
+}
+
+#about {
+  padding: 90px 0;
+}
+
+#about ul li {
+  font-size: 1.05rem;
+}
+
 
 
   </style>
@@ -307,43 +326,49 @@
   </div>
 </section>
   
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="text-center mb-4">About Us</h2>
-      <p class="text-center">
-        Vincent Thrives Consultancy is your strategic partner in recruitment, application development, and payroll management. We empower businesses to scale with confidence by delivering high-impact, custom solutions.
-      </p>
-    </div>
-  </section>
+ 
+<!-- About Section -->
+<section id="about" class="bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
 
-<!-- Contact Section -->
-<section id="contact" class="bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Get in Touch</h2>
-      <div class="row justify-content-center g-4">
-        
-        <!-- Email Card -->
-        <div class="col-md-5">
-          <div class="bg-white p-4 rounded shadow-sm h-100 text-center contact-card">
-            <i class="bi bi-envelope-fill display-4 text-primary mb-3"></i>
-            <h5>Email Us</h5>
-            <p><a href="mailto:vincentthrives@gmail.com" class="text-decoration-none fs-5">vincentthrives@gmail.com</a></p>
-          </div>
-        </div>
-  
-        <!-- Phone Card -->
-        <div class="col-md-5">
-          <div class="bg-white p-4 rounded shadow-sm h-100 text-center contact-card">
-            <i class="bi bi-telephone-fill display-4 text-success mb-3"></i>
-            <h5>Call Us</h5>
-            <p><a href="tel:7892549612" class="text-decoration-none fs-5">7892549612</a></p>
-          </div>
-        </div>
-  
+      <!-- Text Content -->
+      <div class="col-md-6">
+        <h2 class="mb-4">About Vincent Thrives</h2>
+        <p class="lead fw-semibold">
+          Empowering businesses through people, process, and technology.
+        </p>
+        <p>
+          Vincent Thrives Private Limited is a dynamic consulting and technology company
+          committed to helping organizations grow smarter and faster. We specialize in
+          recruitment solutions, application development, website development, and payroll services.
+        </p>
+        <p>
+          From enterprise clients like <strong>Aditya Birla Capital</strong> to educational
+          institutions and growing businesses, we deliver customized solutions that create
+          real impact. Our approach blends industry expertise, innovation, and integrity
+          to ensure long-term success for our clients.
+        </p>
+
+        <ul class="list-unstyled mt-4">
+          <li class="mb-2">✔ Trusted by enterprise & institutional clients</li>
+          <li class="mb-2">✔ Skilled professionals & modern technologies</li>
+          <li class="mb-2">✔ Reliable delivery & long-term partnerships</li>
+        </ul>
       </div>
+
+      <!-- Image / Visual -->
+      <div class="col-md-6 text-center">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fit=crop&w=900&q=80"
+          alt="About Vincent Thrives"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -357,6 +382,7 @@
 </body>
 
 </html>
+
 
 
 
