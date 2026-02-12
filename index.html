@@ -155,25 +155,60 @@
     height: 100%;
   }
 }
-    #clients {
-  padding: 80px 0;
-}
-
-.client-logo {
-  max-height: 320px;      /* BIGGER image */
-  width: 100%;
-  max-width: 520px;       /* keeps it elegant on large screens */
-  object-fit: contain;
-}
+   /* Clients Section Premium Style */
 #clients {
-  padding: 80px 0;
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+  padding: 100px 0;
+  position: relative;
 }
 
+#clients h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Glass Effect Card */
+.carousel-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.03);
+}
+
+/* Client Logo */
 .client-logo {
-  max-height: 320px;      /* BIGGER image */
-  width: 100%;
-  max-width: 520px;       /* keeps it elegant on large screens */
+  max-height: 180px;
+  width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes logo white for visibility */
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .client-logo {
+  transform: scale(1.1);
+}
+
+/* Client Name */
+.carousel-item h5 {
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 20px;
 }
 
 #about {
@@ -364,7 +399,7 @@
   </section>
 
 <!-- Clients Section -->
-<section id="clients" class="bg-white">
+<section id="clients" >
   <div class="container">
     <h2 class="text-center mb-5">Our Clients</h2>
 
@@ -538,6 +573,7 @@
 </body>
 
 </html>
+
 
 
 
