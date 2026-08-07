@@ -3,7 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vincent Thrives Private Limited</title>
+  <title>Vincent Thrives Private Limited | School Solutions · Namma Vidyalaya App · Recruitment · App Dev</title>
+  <meta name="description" content="Vincent Thrives builds school-management apps and websites (including Namma Vidyalaya — our flagship school app on Google Play), plus recruitment, payroll, app &amp; website development. Bangalore &amp; Tumkur, Karnataka." />
+  <meta name="keywords" content="Vincent Thrives, Namma Vidyalaya, school management app, school ERP Karnataka, school website builder, recruitment Bangalore, payroll Karnataka, DLT SMS to parents, VTPLS" />
+  <meta property="og:title" content="Vincent Thrives Private Limited — School Solutions &amp; Namma Vidyalaya App" />
+  <meta property="og:description" content="School management apps &amp; websites — powered by our flagship product Namma Vidyalaya on Google Play. Plus recruitment, payroll, internships." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vincentthrives.com/" />
+  <meta property="og:image" content="https://vincentthrives.com/namma-vidyalaya-logo.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Vincent Thrives Private Limited",
+        "url": "https://vincentthrives.com/",
+        "email": "vincentthrives@gmail.com",
+        "telephone": "+91-7892549612",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tumkur",
+          "addressRegion": "Karnataka",
+          "postalCode": "572125",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://www.instagram.com/vincent_thrives",
+          "https://www.linkedin.com/company/vincent-thrives-private-limited/"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Namma Vidyalaya",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Android",
+        "url": "https://www.nammavidyalaya.com",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.nammavidyalaya.app",
+        "image": "https://vincentthrives.com/namma-vidyalaya-logo.png",
+        "description": "A modern school-management app for admissions, attendance, fees, timetables, notices, DLT-compliant SMS alerts to parents, and parent–teacher communication. Built by Vincent Thrives.",
+        "author": {
+          "@type": "Organization",
+          "name": "Vincent Thrives Private Limited"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -160,6 +211,46 @@
     .modal-cta { display: inline-flex; align-items: center; gap: 9px; background: var(--gold); color: var(--dark); padding: 12px 26px; border-radius: 3px; border: none; font-weight: 600; font-size: .82rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: background .3s,transform .2s; }
     .modal-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
 
+    /* NAMMA VIDYALAYA PRODUCT SECTION */
+    #product { padding: 110px 0; background: var(--dark); position: relative; overflow: hidden; }
+    #product::before { content: 'PRODUCT'; position: absolute; left: -10px; top: 40px; font-family: 'Playfair Display', serif; font-size: 10rem; font-weight: 900; color: rgba(201,168,76,.035); line-height: 1; pointer-events: none; user-select: none; }
+    .nv-wrap { max-width: 1200px; margin: auto; padding: 0 30px; display: grid; grid-template-columns: 5fr 6fr; gap: 70px; align-items: center; position: relative; z-index: 1; }
+    .nv-visual { position: relative; display: flex; align-items: center; justify-content: center; padding: 30px; }
+    .nv-visual::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(201,168,76,.18) 0%, transparent 65%); pointer-events: none; z-index: 0; }
+    .nv-logo-wrap { position: relative; z-index: 2; }
+    .nv-logo { width: 260px; height: 260px; border-radius: 48px; display: block; box-shadow: 0 30px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(201,168,76,.15); background: linear-gradient(135deg, var(--dark2), var(--dark3)); object-fit: cover; }
+    .nv-badge-corner { position: absolute; top: -14px; right: -14px; background: var(--gold); color: var(--dark); padding: 8px 14px; border-radius: 20px; font-size: .68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; z-index: 3; box-shadow: 0 8px 20px rgba(0,0,0,.5); }
+    .nv-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: .72rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; font-weight: 600; }
+    .nv-eyebrow::before { content: ''; width: 34px; height: 1px; background: var(--gold); }
+    .nv-title { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 900; color: var(--white); line-height: 1.05; margin-bottom: 6px; letter-spacing: -.5px; }
+    .nv-subtitle { font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold); font-size: 1.05rem; margin-bottom: 22px; }
+    .nv-desc { color: var(--muted); line-height: 1.85; font-size: .98rem; margin-bottom: 28px; max-width: 560px; }
+    .nv-feats { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px; margin-bottom: 24px; max-width: 560px; }
+    .nv-feats li { display: flex; align-items: center; gap: 10px; color: var(--white); font-size: .9rem; }
+    .nv-feats li i { color: var(--gold); font-size: 1rem; flex-shrink: 0; }
+    .nv-chip { display: inline-flex; align-items: center; gap: 9px; background: rgba(46,204,113,.08); border: 1px solid rgba(46,204,113,.32); color: #4ade80; font-size: .8rem; padding: 8px 14px; border-radius: 20px; margin-bottom: 28px; }
+    .nv-chip i { font-size: .95rem; }
+    .nv-ctas { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .nv-cta-web { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--dark); padding: 15px 26px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: .82rem; letter-spacing: 1.2px; text-transform: uppercase; transition: all .3s; }
+    .nv-cta-web:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 14px 30px rgba(201,168,76,.3); }
+    .nv-cta-web i { transition: transform .3s; }
+    .nv-cta-web:hover i { transform: translateX(4px); }
+    .nv-play-badge { display: inline-flex; align-items: center; gap: 12px; background: #000; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none; border: 1px solid #333; transition: all .3s; }
+    .nv-play-badge:hover { background: #1a1a1a; transform: translateY(-3px); box-shadow: 0 14px 30px rgba(0,0,0,.5); border-color: #555; }
+    .nv-play-icon { font-size: 1.9rem; line-height: 1; color: #fff; }
+    .nv-play-text { display: flex; flex-direction: column; line-height: 1.1; }
+    .nv-play-text small { font-size: .58rem; letter-spacing: 1px; opacity: .85; margin-bottom: 2px; text-transform: uppercase; }
+    .nv-play-text strong { font-size: 1.05rem; font-weight: 500; letter-spacing: .3px; }
+    @media (max-width: 900px) {
+      .nv-wrap { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+      .nv-eyebrow { justify-content: center; }
+      .nv-feats { grid-template-columns: 1fr; text-align: left; max-width: 340px; margin-left: auto; margin-right: auto; }
+      .nv-ctas { justify-content: center; }
+      .nv-chip { margin-left: auto; margin-right: auto; }
+      .nv-desc { margin-left: auto; margin-right: auto; }
+      .nv-logo { width: 210px; height: 210px; border-radius: 40px; }
+    }
+
     /* SCROLL REVEAL */
     .reveal { opacity: 0; transform: translateY(36px); transition: opacity .7s ease,transform .7s ease; }
     .reveal.on { opacity: 1; transform: none; }
@@ -285,6 +376,58 @@
         <button class="svc-btn" onclick="openM('m-intern')">Learn more <i class="bi bi-arrow-right"></i></button>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Flagship Product — Namma Vidyalaya -->
+<section id="product">
+  <div class="nv-wrap">
+
+    <div class="nv-visual rev-l">
+      <div class="nv-logo-wrap">
+        <span class="nv-badge-corner">On Google Play</span>
+        <img class="nv-logo" src="namma-vidyalaya-logo.png" alt="Namma Vidyalaya app logo" />
+      </div>
+    </div>
+
+    <div class="nv-content rev-r">
+      <div class="nv-eyebrow">Our Flagship Product</div>
+      <h2 class="nv-title">Namma Vidyalaya</h2>
+      <div class="nv-subtitle">— Our School, in your pocket</div>
+      <p class="nv-desc">
+        A modern school-management app for admissions, attendance, fees, timetables, notices, SMS alerts to parents and parent&ndash;teacher communication &mdash; built by Vincent Thrives for schools across Karnataka.
+      </p>
+
+      <ul class="nv-feats">
+        <li><i class="bi bi-check2-circle"></i>Admissions &amp; Enquiry</li>
+        <li><i class="bi bi-check2-circle"></i>Attendance &amp; Timetable</li>
+        <li><i class="bi bi-check2-circle"></i>Fee Management</li>
+        <li><i class="bi bi-check2-circle"></i>Notices &amp; Circulars</li>
+        <li><i class="bi bi-check2-circle"></i>SMS Alerts to Parents</li>
+        <li><i class="bi bi-check2-circle"></i>Parent&ndash;Teacher Chat</li>
+        <li><i class="bi bi-check2-circle"></i>Online Report Cards</li>
+        <li><i class="bi bi-check2-circle"></i>Multi-Role Access</li>
+      </ul>
+
+      <div class="nv-chip" title="Registered under our VTPLS DLT sender header — no third-party middleman">
+        <i class="bi bi-patch-check-fill"></i>
+        TRAI DLT-compliant SMS &mdash; sent through our own registered VTPLS sender header
+      </div>
+
+      <div class="nv-ctas">
+        <a class="nv-cta-web" href="https://www.nammavidyalaya.com" target="_blank" rel="noopener">
+          Visit nammavidyalaya.com <i class="bi bi-arrow-up-right"></i>
+        </a>
+        <a class="nv-play-badge" href="https://play.google.com/store/apps/details?id=com.nammavidyalaya.app" target="_blank" rel="noopener" aria-label="Get Namma Vidyalaya on Google Play">
+          <span class="nv-play-icon"><i class="bi bi-google-play"></i></span>
+          <span class="nv-play-text">
+            <small>Get it on</small>
+            <strong>Google Play</strong>
+          </span>
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -479,8 +622,15 @@
       <li>Parent &amp; student portals with real-time updates &amp; notices</li>
       <li>Custom school websites with admissions forms, gallery &amp; events</li>
       <li>Online exam, timetable &amp; report card systems</li>
+      <li>DLT-compliant SMS alerts to parents (via our own VTPLS sender header)</li>
       <li>Hosting, training &amp; ongoing support for school staff</li>
     </ul>
+    <p style="background:rgba(201,168,76,.08); border:1px solid rgba(201,168,76,.25); border-radius:6px; padding:14px 16px; margin:18px 0 22px; color:var(--white); font-size:.88rem; line-height:1.7;">
+      <strong style="color:var(--gold)">Powered by Namma Vidyalaya</strong> — our flagship school-management app, live on Google Play and used by schools across Karnataka.
+      &nbsp;<a href="https://www.nammavidyalaya.com" target="_blank" rel="noopener" style="color:var(--gold); text-decoration:underline;">Visit site</a>
+      &nbsp;·&nbsp;
+      <a href="https://play.google.com/store/apps/details?id=com.nammavidyalaya.app" target="_blank" rel="noopener" style="color:var(--gold); text-decoration:underline;">Google Play</a>
+    </p>
     <a href="#contact" class="modal-cta" onclick="closeM('m-school')">Get in Touch <i class="bi bi-arrow-right"></i></a>
   </div>
 </div>
